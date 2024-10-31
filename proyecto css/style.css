@@ -1,0 +1,74 @@
+
+* {
+    font-size: 30px;
+    color:rgb(3, 3, 3)
+}
+
+body {
+    background-image: url('imganes/fondo minimalista.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+
+.galery {
+    display: flex;
+    height: 5rem; /* Tamaño inicial más pequeño */
+    gap: 0.5rem;
+    transition: height 0.3s ease; /* Transición suave para el efecto de agrandamiento */
+}
+
+.galery:hover {
+    height: 10rem; /* Tamaño al pasar el cursor */
+}
+
+.galery > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.galery > div:hover {
+    flex: 5;
+}
+
+#titulo-movible {
+
+    font-size: 50px;
+    color: rgb(90, 90, 90);
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#titulo-movible:hover {
+    color: #ffffff; /* Cambia el color del texto al pasar el cursor */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agrega una sombra al texto */
+}
+
+.titulo-movible {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.titulo-movible:hover {
+    transform: translateY(-20px); /* Mueve el texto 20px hacia arriba */
+}
+
+#titulo-movible {
+    border-style:dashed ;
+    border-color: rgb(162, 162, 162);
+    border-radius: 50px;
+    border-width: 10px;
+    background-color: rgb(255, 255, 255, 0.1);
+}
